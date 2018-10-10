@@ -1,0 +1,95 @@
+.pricing {
+	background-color: @mandyColor;
+	color: #fff;
+	padding-bottom: 30px;
+	&-title {
+		position: relative;
+		margin-bottom: 70px;
+		text-align: center;
+		&:before {
+			content: '';
+			position: absolute;
+			width: 45px;
+			height: 1px;
+			bottom: -10px;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			background-color: #fff;
+		}
+	}
+	&-list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	&-item {
+		width: 100%;
+		max-width: 370px;
+		min-height: 175px;
+		margin-bottom: 30px;
+		display: flex;
+		justify-content: space-between;
+		padding: 27px 15px 27px 30px;
+		background-color: @flushMahoganyColor;
+		transition: background 1s;
+		&:hover, &:focus {
+			border: 2px solid #fff;
+			background-color: @mandyColor;
+			transition: background 0.6s;
+			cursor: pointer;
+			.pricing-left {
+				border-right-color: #fff;
+			}
+		}
+	}
+}
+.pricing-left {
+	padding-right: 30px;
+	font-family: @oswaldFont;
+	font-weight: 700;
+	font-size: 18px;
+	color: #fff;
+	text-transform: uppercase;
+	border-right: 1px solid @mandyColor;
+	&__name {
+		position: relative;
+		margin-top: 50px;
+		&:before {
+			content: '';
+			position: absolute;
+			top: -50px;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+		}
+		&--standart {
+			&:before {
+				.sprite(@pencil)
+			}
+		}
+		&--advanced {
+			&:before {
+				.sprite(@plane)
+			}
+		}
+		&--business {
+			&:before {
+				.sprite(@portfolio)
+			}
+			
+		}
+	}
+	&__price {
+		margin-top: 20px;
+		font-size: 36px;
+		sup {
+			font-size: 14px;
+
+		}
+	}
+}
+.pricing-right {
+	margin-top: 10px;
+	font-size: 12px;
+}

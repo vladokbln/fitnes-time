@@ -1,0 +1,50 @@
+.partners {
+	&-title {
+		margin-bottom: 70px;
+		position: relative;
+		text-align: center;
+		color: #202020;
+		&:before {
+			content: '';
+			position: absolute;
+			width: 45px;
+			height: 1px;
+			bottom: -10px;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			background-color: #202020;
+		}
+	}
+	&-js__wrap {
+		position: relative;
+	}
+	&-item {
+		display: flex;
+		height: 100%;
+		margin: auto;
+		img {
+			margin: 0 auto;
+		}
+	}
+	&-btn {
+		position: absolute;
+		top: 10px;
+		left: 0;
+		z-index: 10;
+		cursor: pointer;
+		&__prev {
+			i {
+				.sprite(@arrow2-prev);
+			}
+		}
+		&__next {
+			left: auto;
+			right: 0;
+			i {
+				.sprite(@arrow2-next);
+			}
+		}
+
+	}
+}

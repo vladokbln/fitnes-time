@@ -1,0 +1,79 @@
+.ourteam {
+	background: url("../img/img-3.jpg") 0 0 repeat;
+	background-attachment: fixed;
+	overflow: hidden;
+	&-title {
+		margin-bottom: 70px;
+		position: relative;
+		text-align: center;
+		color: #fff;
+		&:before {
+			content: '';
+			position: absolute;
+			width: 45px;
+			height: 1px;
+			bottom: -10px;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			background-color: #fff;
+		}
+	}
+	&-list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+}
+.ourteam-item {
+	width: 100%;
+	max-width: 270px;
+	min-height: 318px;
+	cursor: pointer;
+	
+	img {
+		display: block;
+		width: 100%;
+	}
+	&.active {
+		& .ourteam-info {
+			height: 100%;
+			transition:  1s;
+			&__text {
+				display: block;
+			}
+		}
+		img {
+			display: none;
+		}
+	}
+}
+.ourteam-info {
+	padding: 15px 20px;
+	background-color: #fff;
+	overflow: hidden;
+	transition:  1s;
+	&__post {
+		font-family: @oswaldFont;
+		font-size: 12px;
+		line-height: 24px;
+		color: #afafaf;
+		text-transform: uppercase;
+	}
+	&__text {
+		display: none;
+		user-select: none;
+	}
+}
+
+
+body > .js-Parallaxify { background-size: cover }
+/* for "hoverable" child, see rules below (that use absolute) */
+.js-Parallaxify > * { position: relative }
+.js-Parallaxify > .js-Parallaxify {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}

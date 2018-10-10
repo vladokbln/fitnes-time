@@ -1,0 +1,62 @@
+.features-title {
+	font-family: @oswaldFont;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 30px;
+	color: #202020;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	span {
+		color: @mandyColor;
+	}
+	&__sub {
+		font-family: @droidSerifFont;
+		font-size: 16px;
+		font-style: italic;
+		text-align: center;
+	}
+}
+.features-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+.features-item {
+	width: 100%;
+	max-width: 265px;
+	&__title {
+		position: relative;
+		padding-left: 35px;
+		&:before {
+			position: absolute;
+			content: '';
+			top: 0;
+			left: 0;
+		}
+		&--strength {
+			&:before {
+				.sprite(@strength);
+			}
+		}
+		&--cardio {
+			&:before {
+				.sprite(@cardio);
+			}
+		}
+		&--aquatic {
+			&:before {
+				.sprite(@aquatic);
+			}
+		}
+		&--mind {
+			&:before {
+				.sprite(@mind);
+			}
+		}
+	}
+	&__text {
+		font-size: 13px;
+	}
+}

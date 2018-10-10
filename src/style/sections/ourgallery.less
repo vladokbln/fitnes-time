@@ -1,0 +1,36 @@
+.ourgallery {
+	padding-bottom: 30px;
+	&-title {
+		position: relative;
+		margin-bottom: 35px;
+		color: #000;
+		text-align: center;
+		&:before {
+			content: '';
+			position: absolute;
+			width: 45px;
+			height: 1px;
+			bottom: -10px;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			background-color: #000;
+		}
+	} 
+	&-text {
+		width: 100%;
+		max-width: 530px;
+		margin: 0 auto;
+		text-align: center;
+		font-size: 12px;
+	}
+	&-list {
+		margin-top: 65px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	&-item {
+		margin-bottom: 30px;
+	}
+}

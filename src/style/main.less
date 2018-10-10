@@ -1,0 +1,85 @@
+@import 'fonts.less';
+@import 'libs.less';
+@import 'vars.less';
+@import '../img/sprite/sprite';
+
+html { 
+  line-height: 21px;
+  font-size: 14px;
+}
+body {
+  width: 100%;
+  max-width: 2570px;
+  margin: 0 auto;
+  font-family: @mainFont;
+  color: @mainColor;
+}
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  text-transform: uppercase;
+}
+h2 {
+  font-family: @oswaldFont;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 21px;
+}
+h3 {
+  font-family: @oswaldFont;
+  font-size: 14px;
+  line-height: 24px;
+  color: #202020;
+}
+ul,li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}  
+p {
+  margin: 0;
+}  
+a {
+  text-decoration: none;
+  color: black;
+  outline: none;
+}
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}  
+textarea {
+  resize: none;
+}
+section {
+  position: relative;
+  padding: 60px 0;
+}
+input,
+select,
+button {
+  outline: none;
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.icon {
+  display: inline-block;
+}
+@import 'modules/header';
+@import 'sections/features';
+@import 'sections/ourteam';
+@import 'sections/ourgallery';
+@import 'sections/pricing';
+@import 'sections/partners';
+@import 'modules/footer';
+@import 'media';
